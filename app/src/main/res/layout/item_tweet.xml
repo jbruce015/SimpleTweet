@@ -6,6 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
 
+
+
     <ImageView
         android:id="@+id/ivProfileImage"
         android:layout_width="50dp"
@@ -14,10 +16,12 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
+        android:background="@drawable/img"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvScreenName"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -35,4 +39,41 @@
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="This is my tweet!!" />
+
+    <Button
+        android:id="@+id/HeartButton"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/twitter_blue"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:background="@drawable/ic_vector_heart" />
+
+    <Button
+        android:id="@+id/RetweetButton"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:background="@drawable/ic_vector_retweet"
+        android:backgroundTint="@color/twitter_blue" />
+
+    <Button
+        android:id="@+id/CommentButton"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:background="@drawable/ic_vector_comment"
+        android:backgroundTint="@color/twitter_blue" />
+
+
 </RelativeLayout>
